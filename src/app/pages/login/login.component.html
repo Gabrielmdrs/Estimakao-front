@@ -1,1 +1,32 @@
-<app-default-layout></app-default-layout>
+<app-default-layout
+    title="Administrador"
+    primaryButton="Fazer login"
+    [disablePrimaryBtn]="!loginForm.valid"
+    (submit)="submit()"
+>
+
+    <form [formGroup]="loginForm">
+        <app-primary-input 
+            formControlName="usuario"
+            placeHolder = "Ex: user123" 
+            label = "Login" 
+            type="text" 
+            inputName="usuario"
+            >
+            <img src="/assets/svg/user.png"/>        
+        </app-primary-input>
+
+        <app-primary-input 
+            formControlName="senha"
+            placeHolder = "******" 
+            label = "Senha"
+            type="senha"
+            inputName="senha"
+            >
+            <img src="/assets/svg/lock.png"/>     
+        </app-primary-input>
+        <span>Esqueceu a senha?</span>
+
+    </form>
+
+</app-default-layout>

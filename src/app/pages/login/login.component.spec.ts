@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoginComponent } from './login.component';
 import { DefaultLayoutComponent } from '../../components/default-layout/default-layout.component';
+import { PrimaryInputComponent } from '../../components/primary-input/primary-input.component';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
